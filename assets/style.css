@@ -1,0 +1,190 @@
+/* Resetting some defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Playfair Display", serif; /* Apply Playfair Display font as the default font */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#header {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #f9f9f9; /* Add background color */
+}
+
+#header img {
+    max-width: 100%;
+}
+
+.about-title {
+    background-color: black; /* Add black background to the title container */
+    color: white; /* Set text color to white */
+    padding: 10px; /* Add padding for better readability */
+    text-align: center; /* Center align the title */
+    margin-bottom: 20px; /* Add margin to create space between title and paragraph */
+}
+
+.about-title h1 {
+    margin: 0; /* Remove default margin for the h1 element */
+}
+
+#about {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f9f9f9; /* Add background color */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-content {
+    float: left;
+    width: 50%;
+}
+
+.about-image {
+    float: right;
+    width: 30%; /* Adjust the width here */
+    margin-top: 10px; /* Adjust margin-top to bring the image closer to the paragraph */
+    margin-left: 5px; /* Add margin to create space between the image and the paragraph */
+    margin-right: 70px;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 50%;
+    display: block; /* Ensure the image behaves as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    border: 4px solid black;
+}
+
+#projects {
+    padding: 100px 0;
+    text-align: center;
+    background-color: #f9f9f9; /* Add background color */
+    clear: both; /* Add clear property */
+}
+
+#projects h2 {
+    background-color: black; /* Add black background to the title */
+    color: white; /* Set text color to white */
+    padding: 10px; /* Add padding for better readability */
+}
+
+.project-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    margin-top: 60px;
+}
+
+.project-box {
+    width: calc(30% - 10px); /* Adjust the width here */
+    padding: 20px; /* Add padding */
+    border: 4px solid black;
+}
+
+.project-box img {
+    width: 100%;
+    height: auto;
+}
+
+.project-label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+#contact {
+    padding: 100px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+    color: #000;
+}
+
+#contact h2 {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.contact-info {
+    margin-top: 150px; /* Add margin to create space between the title and contact information */
+    margin-bottom: 150px;
+}
+
+nav h1 {
+    color: white; /* Set text color to white */
+    margin-left: 20px; /* Add some margin to position it nicely */
+    display: inline-block; /* Ensure the title behaves properly */
+}
+
+nav {
+    background-color: #000; /* Black background */
+    text-align: center; /* Center align the nav items */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px; /* Adjust spacing between nav items */
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 15px; /* Adjust padding for nav items */
+    color: #fff; /* White text color */
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #333; /* Darken background on hover */
+}
+
+/* Adjustments for transitioning-image section */
+#transitioning-image {
+    height: 100vh; /* Set the height to cover the entire viewport height */
+    background-size: cover; /* Ensure the background image covers the entire section */
+    background-position: center; /* Center the background image */
+    opacity: 0.5; /* Adjust the opacity of the background image (0.5 for 50% opacity) */
+    position: relative; /* Ensure relative positioning */
+}
+
+#transitioning-image .container {
+    position: absolute; /* Position the container absolutely */
+    top: 50%; /* Position it vertically at the center */
+    left: 50%; /* Position it horizontally at the center */
+    transform: translate(-50%, -50%); /* Center it precisely */
+    text-align: center; /* Center align the text */
+    max-width: 80%; /* Set maximum width for better readability */
+}
+
+.welcome-paragraph {
+    font-weight: 400;
+    font-style: normal;
+    color: white; /* Set text color to white */
+    font-size: 18px; /* Adjust font size as needed */
+    padding: 20px; /* Add padding for better readability */
+}
+
+.logo {
+    width: 50px; /* Adjust width according to your logo size */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Adjust margin for positioning */
+    position: absolute; /* Position the logo absolutely */
+    top: 2px; /* Position it 5px from the top */
+    left: 10px; /* Position it 10px from the left */
+}
